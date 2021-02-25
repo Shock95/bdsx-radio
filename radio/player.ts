@@ -27,7 +27,6 @@ export class NBSPlayer {
     }
 
     public start() {
-        let delay = Math.floor(this.song.getDelay());
         system.update = () => {
             if(!this.playing) {
                 return;
@@ -41,7 +40,7 @@ export class NBSPlayer {
                     this.setSong(NBSLoader.getNextSong());
                 }
             }
-
+            let delay = Math.floor(this.song.getDelay());
             this.updateTick++;
             if (this.updateTick % delay == 0) {
                 this.tick++;
