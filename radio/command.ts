@@ -6,7 +6,9 @@ const PREFIX = Color.GOLD + NBSLoader.PREFIX + Color.RESET;
 const USAGE = PREFIX + ` ${Color.RED}Usage: /radio [play | stop | volume | status]`;
 
 command.hook.on((command, origin) => {
-    return 0; // suppress unknown command messages
+    if(command.startsWith("/radio")) {
+        return 0; // suppress unknown command messages
+    }
 });
 
 netevent.after(MinecraftPacketIds.CommandRequest).on((ev, networkIdentifier) => {
