@@ -1,6 +1,6 @@
-import { MinecraftPacketIds } from "bdsx";
 import {RawPacket} from "bdsx/rawpacket";
-import {NetworkIdentifier} from "bdsx/native";
+import { MinecraftPacketIds } from "bdsx/bds/packetids";
+import { NetworkIdentifier } from "bdsx/bds/networkidentifier";
 
 export class PlaySoundPacket extends RawPacket {
 
