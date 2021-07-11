@@ -21,13 +21,13 @@ You can find a few .NBS files here:
 - https://github.com/Ruinscraft/powder-resources/tree/master/songs/songs
 
 ## Commands
-```/radio play``` - Connects player to the radio
+```/radioplay``` - Connects player to the radio
 
-```/radio stop``` - Disconnects player from the radio
+```/radiostop``` - Disconnects player from the radio
 
-```/radio status``` - Shows radio status (Current song, volume, etc)
+```/radiostatus``` - Shows radio status (Current song, volume, etc)
 
-```/radio volume <number>``` - Sets the player's volume for the radio
+```/radiovolume <number>``` - Sets the player's volume for the radio
 
 ## References
 [libnbs](https://github.com/thebigsmileXD/libnbs) (XenialDan)
