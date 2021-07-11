@@ -5,11 +5,7 @@ import { NBSLoader } from "./loader";
 import { Color, Utils } from "./util";
 
 const PREFIX = Color.GOLD + NBSLoader.PREFIX + Color.RESET;
-const USAGE = PREFIX + ` ${Color.RED}/radioplay: Connects you to the radio\n
-                                     /radiostop: Disconnects you from the radio\n
-                                     /radiostatus: Gives you information on the radio.\n
-                                     /radiohelp: Shows you this text!\n
-                                     /radiovolume: Lets you set the volume of the radio!`;
+const USAGE = PREFIX + ` ${Color.RED}/radioplay: Connects you to the radio\n/radiostop: Disconnects you from the radio\n/radiostatus: Gives you information on the radio.\n/radiohelp: Shows you this text!\n/radiovolume: Lets you set the volume of the radio!`;
 
 command.register("radioplay", "Turns on the radio!").alias("rp").overload((p, o) => {
     let player = o.getEntity() as Player;
