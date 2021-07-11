@@ -1,4 +1,3 @@
-import { Actor } from "bdsx/native";
 import { Utils } from "./util";
 import { PlaySoundPacket } from "./packet/PlaySoundPacket";
 
@@ -8,6 +7,7 @@ import { Note } from "./parser/note";
 import { Layer } from "./parser/layer";
 import { NBSFile } from "./parser/nbs-file";
 import { Instrument } from "./parser/instrument";
+import { Actor } from "bdsx/bds/actor";
 
 const system = server.registerSystem(0, 0);
 

@@ -1,5 +1,4 @@
-import { ActorUniqueID } from "bdsx/bds/actor";
-import { Actor } from "bdsx";
+import { Actor, ActorUniqueID } from "bdsx/bds/actor";
 import { NBSPlayer } from "./player";
 import { Song } from "./parser/song";
 import { NBSFile } from "./parser/nbs-file";

@@ -1,6 +1,6 @@
 import { NBSLoader } from "./loader";
-import { MinecraftPacketIds, netevent } from "bdsx/index";
 import "./command";
+import { events } from "bdsx/event";
 
 const fs = require("fs");
 const path = require("path");
@@ -11,6 +11,9 @@ if (!fs.existsSync(dir)){
 }
 NBSLoader.init(dir);
 
-netevent.before(MinecraftPacketIds.Disconnect).on((ev, networkIdentifier) => {
-    NBSLoader.stopPlaying(networkIdentifier.getActor()!);
+events.networkDisconnected.on((ni) => {
+    let actor = ni.getActor();
+    if (actor){
+        NBSLoader.stopPlaying(actor);
+    }
 });
